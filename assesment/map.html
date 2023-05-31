@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form w google map</title>
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <fieldset>
+        <form action="">
+            <!-- taken a form tag under fieldset  -->
+            <header>
+                contact us
+            </header>
+            <hr>
+            <!-- header tag for heading and hr for seperating header tag from nav -->
+            <nav>
+                <div id="adrs">
+                    address:
+                </div>
+                <div id="details">
+                    <span>saint marco street<br>
+                        6th floor,tokyo,japan,132564
+                    </span>
+                    <span><i class=" fa-solid fa-phone"></i>+91 9856482558 <br>
+                        <i class="fa-solid fa-envelope"></i>user09@gmail.com
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                </div>
+            </nav>
+            <!-- taken a div for heading "address" and another div for 3 span tags in which details of address are given  ----  all under nav tag   -->
+            <main>
+                <div id="info">
+                    <input type="text" name="name" placeholder="Name:" minlength="3" maxlength="6" required>
+                    <input type="text" name="company" placeholder="Company:" required>
+                    <br>
+                    <input type="email" name="email" placeholder="E-mail:" required>
+                    <input type="text" pattern="[0-9]{10}" maxlength="10" required placeholder="Mobile:">
+                    <br>
+                    <textarea name="" id="" cols="53" rows="8"></textarea>
+                    <br>
+                    <input type="submit" value="send" id="btn">
+                </div>
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827927.288284982!2d138.70025148928357!3d35.84677285317099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sin!4v1685430999832!5m2!1sen!2sin"
+                        width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </main>
+            <!-- taken a div for 4 inputs and another div for embedding a map by using iframe tag -->
+        </form>
+    </fieldset>
+</body>
+
+</html>
